@@ -20,7 +20,7 @@ function Projects() {
                     <Image w="auto" src="./M.danz.png" />
                 </Box>
                 
-                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center'}} m={{base: ' 0 auto'}}> 
+                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center', xl: "left"}} m={{base: ' 0 auto'}}> 
                     <Text fontSize='3xl' fontWeight={700}> Mdanz Project</Text>
 
                     <Text mt={3} fontSize='lg'>
@@ -41,7 +41,7 @@ function Projects() {
                     <Image w="auto" src="./Chat.png"  border="1px solid black"/>
                 </Box>
                 
-                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center'}} m={{base: ' 0 auto'}}> 
+                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center', xl: "left"}} m={{base: ' 0 auto'}}> 
                     <Text fontSize='3xl' fontWeight={700}> Chat Interface</Text>
 
                     <Text mt={3} fontSize='lg'>

@@ -1,26 +1,26 @@
-import { Center, Flex, Text, Box, Button, Link, Wrap} from '@chakra-ui/react'
+import { Center, Flex, Text, Box, Button, Link, Wrap, Container} from '@chakra-ui/react'
 
 
 function Skils() {
     return(
         <Flex flexDir="column" bg="gray.50">
             <Center flexDir="column" >
-            <Text fontSize={30} m="0 auto" mb={5} mt="40" textAlign="center" fontWeight={600} fontFamily="arial" w="100%"> 
-                    SOBRE  
-                    <Flex bg="blue.700" w={8} h={1} rounded={30} m="0 auto" mt={5}> </Flex>
-            </Text>
+                <Text fontSize={30} m="0 auto" mb={5} mt="40" textAlign="center" fontWeight={600} fontFamily="arial" w="100%"> 
+                        SOBRE  
+                        <Flex bg="blue.700" w={8} h={1} rounded={30} m="0 auto" mt={5}> </Flex>
+                </Text>
 
-            <Text textAlign="center" fontSize='lg'>
-                Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais 
-                <br></br> principalmente em termos de programação e tecnologia
-            </Text>
+                <Text textAlign="center" fontSize='lg'>
+                    Aqui você encontrará mais informações sobre mim, o que faço e minhas habilidades atuais 
+                    <br></br> principalmente em termos de programação e tecnologia
+                </Text>
         
             </Center>
 
-            <Flex display={{ base: 'block', xl: 'flex'}} justify={{base:"center", xl: 'space-around'}} w="90%" m="0 auto"  mt={20}>
-                <Box>
+            <Flex display={{ base:'block', xl:"flex"}} justifyContent={{ base:"center", xl:"space-around"}} w="90%" m="0 auto"  mt={20}>
+                <Box w={{base:"100%", xl:"40%"}}>
                     <Text fontSize='3xl' fontWeight={700}> Me conhecer!</Text>
-                    <Flex  display={{base: 'block'}} w={{ base: '90%', xl: '40%'}}>
+                    <Flex  display={{base: 'block'}} >
                         <Text mt={7} fontSize='lg' >
                             Sou um <Text as='b' color="gray.600">desenvolvedor Web focado em Frontend</Text>, construindo e gerenciando o 
                             Front-end de sites e aplicações Web que levam ao sucesso do produto geral. 
@@ -46,7 +46,7 @@ function Skils() {
                 </Box>
 
                 {/* INICIANDO O BLOCO DAS HABILIDADES*/}
-                <Box w={{base:'100%', xl: '40%'}}>
+                <Box w={{base:"100%", xl:"40%"}}>
                 <Text fontSize='3xl' fontWeight={700}> Minhas Habilidades</Text>
                 
                 <Wrap spacing='10px'>
