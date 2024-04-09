@@ -15,12 +15,12 @@ function Projects() {
                 </Text>
             </Center>
 
-            <Flex justify="space-around" w="90%" justifyContent="center"  mt={5} alignItems="center">
-                <Box m={20} w="45%" >
+            <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={5} alignItems="center">
+                <Box m={20} w={{ xl:"45%"}} textAlign={{base:'center'}} >
                     <Image w="auto" src="./M.danz.png" />
                 </Box>
                 
-                <Box w="35%" > 
+                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center'}} m={{base: ' 0 auto'}}> 
                     <Text fontSize='3xl' fontWeight={700}> Mdanz Project</Text>
 
                     <Text mt={3} fontSize='lg'>
@@ -36,13 +36,13 @@ function Projects() {
                 </Box>
             </Flex>
 
-            <Flex justify="space-around" w="90%" justifyContent="center"  mt={5} alignItems="center">
-                <Box m={20} mt={10} w="45%" >
+            <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={5} alignItems="center">
+                <Box m={20} mt={10} w={{ xl:"45%"}} textAlign={{base:'center'}} >
                     <Image w="auto" src="./Chat.png"  border="1px solid black"/>
                 </Box>
                 
-                <Box w="35%" > 
-                    <Text fontSize='3xl' fontWeight={700}> Mdanz Project</Text>
+                <Box w={{base: '90%', xl:"35%"}} textAlign={{base: 'center'}} m={{base: ' 0 auto'}}> 
+                    <Text fontSize='3xl' fontWeight={700}> Chat Interface</Text>
 
                     <Text mt={3} fontSize='lg'>
                         Site desenvolvido para um projeto de dança, onde tinha de mostrar 

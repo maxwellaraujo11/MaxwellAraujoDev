@@ -4,7 +4,7 @@ import { Flex, Text, Button, Heading  } from "@chakra-ui/react"
 function Home() {
 
     return (
-      <Flex bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt={50}>
+      <Flex bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt="50">
 
         <Flex 
             flexDir="column" 
@@ -14,15 +14,18 @@ function Home() {
 
             <Heading
                  as='h1' 
-                 size='4xl' 
+                 fontSize={{base: '1.5rem', xl: "3rem", }} 
                  noOfLines={1}
+                 textTransform="uppercase"
+                 textAlign="center"
             > 
                Ola, eu sou é Maxwell Araujo
             </Heading>
 
             <Text 
-                textAlign="center" 
-                fontSize="lg" 
+                textAlign={{base: 'center'}} 
+                fontSize={{base: '1.2rem'}} 
+                px={{ base: "15px"}}
                 mt={30}
             >
                 Um desenvolvedor da Web orientado a  resultados, construindo e gerenciando<br></br> 

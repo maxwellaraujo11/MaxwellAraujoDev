@@ -15,7 +15,7 @@ function Contato() {
                 </Text>
             </Center>
 
-            <Flex w="50%" h="80%" bg="White" p={10} m="0 auto" mt={20} rounded={5} flexDir="column" mb={10} boxShadow="lg">
+            <Flex w={{base: "90%", xl:"50%"}} h="80%" bg="White" p={10} m="0 auto" mt={20} rounded={5} flexDir="column" mb={10} boxShadow="lg">
             <FormControl isRequired>
                 <FormLabel>Nome</FormLabel>
                 <Input placeholder='Digite seu Nome' bg="gray.300" h={50}/>

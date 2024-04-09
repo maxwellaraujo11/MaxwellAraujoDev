@@ -3,9 +3,9 @@ import { Flex, Heading, Text, Link, Image, Box, Divider} from "@chakra-ui/react"
 function Footer() {
     return(
        <Flex flexDir="column" bg="black" >
-            <Flex m="0 auto" mt="80px" justifyContent="space-between" width="80%">
+            <Flex display={{base: "block", xl: 'flex'}} flexDir={{base:'column-reverse', xl: 'column'}} m="0 auto" mt="80px" justifyContent="space-between" width="80%">
 
-                    <Flex flexDir="column" zIndex="9" w="50%"> 
+                    <Flex flexDir="column" zIndex="9" w={{base:"90%", xl:"50%"}}> 
 
                         <Heading color="gray.100" fontSize='3xl'> Maxwell Araujo </Heading>
                         <Text color="gray.100" fontSize='md' mt={7} > 
@@ -18,9 +18,9 @@ function Footer() {
                     
                     
 
-                    <Flex flexDir="column" w="30%" textAlign="right">
+                    <Flex flexDir="column" w={{base:"90%", xl:"30%"}} textAlign={{base:'left', xl:"right"}} mt={{base:"40px", xl:'none'}}>
                         <Text fontSize='3xl' fontWeight={700} color="gray.100"> Social</Text>
-                        <Box w="100px" display="flex" flexDir="row" h="50px"  mt={7} textAlign="right" ml="auto">
+                        <Box w="100px" display="flex" flexDir="row" h="50px"  mt={7} textAlign={{base:'left', xl:"right"}} ml={{base:"none",  xl:"auto"}}>
                             <Link 
                                 rounded="5px 0px 0px 5px"
                                 w='50px' h='50px' 
