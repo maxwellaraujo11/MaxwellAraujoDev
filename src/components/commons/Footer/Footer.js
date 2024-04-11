@@ -5,9 +5,9 @@ function Footer() {
        <Flex flexDir="column" bg="black" >
             <Flex display={{base: "block", xl: 'flex'}} flexDir={{base:'column', xl: 'row'}} m="0 auto" mt="80px" justifyContent="space-between" width="80%">
 
-                    <Flex flexDir="column" zIndex="9" w={{base:"90%", xl:"50%"}}> 
+                    <Flex flexDir="column" zIndex="9" w={{base:"100%", xl:"50%"}}> 
 
-                        <Heading color="gray.100" fontSize='3xl'> Maxwell Araujo </Heading>
+                        <Heading color="gray.100" fontSize={{base:"10px", xl:'3xl'}}> Maxwell Araujo </Heading>
                         <Text color="gray.100" fontSize='md' mt={7} > 
                             Um desenvolvedor da Web orientado a  resultados, construindo e gerenciando 
                             <br/> sites e aplicativos da Web que levam ao sucesso do produto geral.
@@ -59,7 +59,6 @@ function Footer() {
             <Text fontSize='xs' textAlign="center" color="white" mb="10">
             © Direitos autorais 2024. Desenvolvido por <Link color='white' as="b" href='#'>Maxwell Araujo</Link>
             </Text>
-
        </Flex>
     )
 }

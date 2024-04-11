@@ -14,17 +14,20 @@ function Home() {
 
             <Heading
                  as='h1' 
-                 fontSize={{base: '1.5rem', xl: "3rem", }} 
+                 fontSize={{base: '1.2rem', xl: "3rem", }} 
+                 overflowWrap="anywhere"
                  noOfLines={1}
                  textTransform="uppercase"
                  textAlign="center"
+                 width={{base:"90%", xl:"100%"}}
+                 margin="0 auto"
             > 
-               Ola, eu sou é Maxwell Araujo
+               Ola, eu sou Maxwell Araujo
             </Heading>
 
             <Text 
                 textAlign={{base: 'center'}} 
-                fontSize={{base: '1.2rem'}} 
+                fontSize={{base:'1rem', xl:"lg"}} 
                 px={{ base: "15px"}}
                 mt={30}
             >
