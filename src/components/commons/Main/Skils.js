@@ -19,17 +19,17 @@ function Skils() {
 
             <Flex display={{ base:'block', xl:"flex"}} justifyContent={{ base:"center", xl:"space-around"}} w="90%" m="0 auto"  mt={20}>
                 <Box w={{base:"100%", xl:"40%"}}>
-                    <Text fontSize='3xl' fontWeight={700}> Me conhecer!</Text>
+                    <Text fontSize='3xl' fontWeight={700}> Me Conhecendo</Text>
                     <Flex  display={{base: 'block'}} >
                         <Text mt={7} fontSize='lg' >
-                            Sou um <Text as='b' color="gray.600">desenvolvedor Web focado em Frontend</Text>, construindo e gerenciando o 
-                            Front-end de sites e aplicações Web que levam ao sucesso do produto geral. 
+                            Sou um <Text as='b' color="gray.600">desenvolvedor Web/mobile focado em Frontend</Text>, construindo e gerenciando o 
+                            Front-end de sites e aplicações que levam ao sucesso do produto geral. 
                             Confira alguns dos meus trabalhos na seção <Text as="b" color="gray.600">Projetos. </Text>
                         </Text>
                         <Text mt={3} fontSize='lg'>
-                            Também gosto de compartilghar conteúdo relacionado ao que aprendi 
-                            ao longo dos anos emseção <Text as="b" color="gray.600">Desenvolvimento Web</Text> para que possa ajudar 
-                            outras pessoas da Comunidade de Desenvolvimento. Sinta-se à vontade 
+                            Também gosto de compartilhar meu desenvolvimento no Likedin e no Github 
+                            para que você conheça um pouco mais do meu trabalho de <Text as="b" color="gray.600">Desenvoldor</Text> para que possa te ajudar a
+                            a encontrar a melhor solução para o seu projeto. Sinta-se à vontade 
                             para se conectar ou me seguir no <Link color='blue.500' fontWeight="bold" href='https://www.linkedin.com/in/maxwellaraujo11' isExternal>Linkedin </Link> e no <Link color='blue.500' fontWeight="bold" href='https://github.com/maxwellaraujo11'>Github</Link>, onde posto 
                             conteúdo útil relacionado ao desenvolvimento e programação web.
                         </Text>
@@ -49,7 +49,7 @@ function Skils() {
                 <Box w={{base:"100%", xl:"40%"}}>
                 <Text fontSize='3xl' fontWeight={700}> Minhas Habilidades</Text>
                 
-                <Wrap spacing='10px'>
+                <Wrap spacing='10px' pb='20'>
                     <Button mt={7} border="2px solid black"> HTML </Button>
                     <Button mt={7} border="2px solid black"> CSS </Button>
                     <Button mt={7} border="2px solid black"> JAVASCRIPT </Button>

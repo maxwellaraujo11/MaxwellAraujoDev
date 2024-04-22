@@ -27,12 +27,12 @@ function Home() {
 
             <Text 
                 textAlign={{base: 'center'}} 
-                fontSize={{base:'1rem', xl:"lg"}} 
+                fontSize={{base:'1.3rem', xl:"lg"}} 
                 px={{ base: "15px"}}
                 mt={30}
             >
-                Um desenvolvedor da Web orientado a  resultados, construindo e gerenciando<br></br> 
-                sites e aplicativos da Web que levam ao sucesso do produto geral.
+                Um desenvolvedor Web/mobile orientado a  resultados, construindo e gerenciando<br></br> 
+                sites e aplicativos que levam ao sucesso do produto geral.
             </Text>
 
             <Button 
