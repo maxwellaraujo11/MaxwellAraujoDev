@@ -20,7 +20,7 @@ function Header() {
           <Image w={50} borderRadius={50} src="https://images.pexels.com/photos/20845839/pexels-photo-20845839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
           <Heading fontSize={25} fontFamily="source sans pro">Maxwell Araujo</Heading>
           </Flex>
-          <Flex p={5} gap={20} fontWeight={600} fontSize={18} >
+          <Flex p={5} gap={20} fontWeight={600} fontSize={18} display={{base: "none", xl: "flex", sm: "flex"}} >
             <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Home </Link>
             <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Skils </Link>
             <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Projetos </Link>

@@ -50,7 +50,7 @@ function Projects() {
                         Desenvolvi com Html, Css, Java script e bootstrap.
                     </Text>
                     
-                    <Button colorScheme='blue' size='lg' mt={8} px={10}>
+                    <Button colorScheme='blue' size='lg' mt={8} px={10} mb={20}>
                         Acessar projeto
                     </Button>
 

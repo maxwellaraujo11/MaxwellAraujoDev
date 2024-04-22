@@ -14,9 +14,9 @@ function Home() {
 
             <Heading
                  as='h1' 
-                 fontSize={{base: '1.2rem', xl: "3rem", }} 
-                 overflowWrap="anywhere"
-                 noOfLines={1}
+                 fontSize={{base: '2rem', xl: "3rem", }} 
+                 overflowWrap="break-word"
+                 noOfLines={2}
                  textTransform="uppercase"
                  textAlign="center"
                  width={{base:"90%", xl:"100%"}}
