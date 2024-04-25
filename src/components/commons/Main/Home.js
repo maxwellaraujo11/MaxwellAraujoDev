@@ -4,12 +4,13 @@ import { Flex, Text, Button, Heading, Link, Image,  } from "@chakra-ui/react"
 function Home() {
 
     return (
-      <Flex bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt="50">
+      <Flex bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt="50" pos="relative">
 
         <Flex 
             flexDir="column" 
             m="0 auto"  
             justify="center"
+            pos="relative"
         >
 
             <Heading
@@ -21,6 +22,7 @@ function Home() {
                  textAlign="center"
                  width={{base:"90%", xl:"100%"}}
                  margin="0 auto"
+                 mt="40"
             > 
                Ola, eu sou Maxwell Araujo
             </Heading>
@@ -37,7 +39,7 @@ function Home() {
 
             <Button
                 as="a"
-                href="(./teste.pdf)"
+                href="(./cvmax.pdf.pdf)"
                 download
                 px={5} 
                 w={250} 
@@ -55,43 +57,46 @@ function Home() {
                     </Text>
             </Button>
 
-            <Text 
-                textAlign={{base: 'center'}} 
-                fontSize={{base:'1.3rem', xl:"lg"}} 
-                px={{ base: "15px"}}
-                mt={30}
-            >
-                Me acompanhe nas plaformas
-            </Text>
+            <Flex mt={10} flexDir="column"> {/*BOX DO TEXTO E LINKS DA HOME*/}
 
-            <Flex m="0 auto" mt={5}>
-                <Link 
-                    rounded="5px 0px 0px 5px"
-                    w='100px' h='50px' 
-                    display="flex" 
-                    alignItems="center" 
-                    justifyContent="center" 
-                    bg='white'
-                    transition="0.5s ease-in-out"
-                    _hover={{bg:"blue.500"}}
-
+                <Text 
+                    textAlign={{base: 'center'}} 
+                    fontSize={{base:'1.3rem', xl:"lg"}} 
+                    px={{ base: "15px"}}
+                    mt={30}
                 >
-                    <Image src="./linkedin.svg" boxSize={35}/>
-                </Link>
+                    Me acompanhe nas plaformas
+                </Text>
 
-                <Link 
-                    rounded="0px 5px 5px 0px"
-                    w='100px' h='50px' 
-                    bg='white'  
-                    alignItems="center" 
-                    justifyContent="center" 
-                    display="flex"
-                    transition="0.5s ease-in-out"
-                    _hover={{bg:"blue.500"}}
-                > 
-                    <Image src="./github.svg" boxSize={35}/>
-                </Link> 
-            </Flex>               
+                <Flex m="0 auto" mt={5}> {/*  BOX DOS LINKS DA HOME*/}
+                    <Link 
+                        rounded="5px 0px 0px 5px"
+                        w='100px' h='50px' 
+                        display="flex" 
+                        alignItems="center" 
+                        justifyContent="center" 
+                        bg='white'
+                        transition="0.5s ease-in-out"
+                        _hover={{bg:"blue.500"}}
+
+                    >
+                        <Image src="./linkedin.svg" boxSize={35}/>
+                    </Link>
+
+                    <Link 
+                        rounded="0px 5px 5px 0px"
+                        w='100px' h='50px' 
+                        bg='white'  
+                        alignItems="center" 
+                        justifyContent="center" 
+                        display="flex"
+                        transition="0.5s ease-in-out"
+                        _hover={{bg:"blue.500"}}
+                    > 
+                        <Image src="./github.svg" boxSize={35}/>
+                    </Link> 
+                </Flex>  {/* FIM BOX DOS LINKS DA HOME*/}
+            </Flex>  {/* FIM BOX DO TEXTO E LINKS DA HOME*/}           
 
         </Flex>
 
