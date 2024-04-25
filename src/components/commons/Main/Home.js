@@ -39,7 +39,7 @@ function Home() {
 
             <Button
                 as="a"
-                href="(./cvmax.docx.pdf)"
+                href="(./cvmax.docx)"
                 download
                 px={5} 
                 w={250} 
