@@ -16,7 +16,7 @@ function Projects() {
             </Center>
 
             <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={5} alignItems="center">
-                <Box m={20} w={{ xl:"45%"}} textAlign={{base:'center'}} >
+                <Box m={{base:"20px", xl:"20"}} w={{ xl:"45%"}} textAlign={{base:'center'}} >
                     <Image w="auto" src="./M.danz.png" />
                 </Box>
                 
@@ -36,8 +36,8 @@ function Projects() {
                 </Box>
             </Flex>
 
-            <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={5} alignItems="center">
-                <Box m={20} mt={10} w={{ xl:"45%"}} textAlign={{base:'center'}} >
+            <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={{base:"20"}} alignItems="center">
+                <Box m={{base:"20px", xl:"20"}} mt={10} w={{ xl:"45%"}} textAlign={{base:'center'}} >
                     <Image w="auto" src="./Chat.png"  border="1px solid black"/>
                 </Box>
                 
@@ -56,7 +56,7 @@ function Projects() {
             </Flex>
 
             <Flex display={{base: 'block', xl:'flex'}} justify={{base: 'center', xl:"space-around"}} w={{base: "100%", xl: '90%'}} justifyContent="center"  mt={5} alignItems="center">
-                <Box m={20} mt={10} w={{ xl:"45%"}} textAlign={{base:'center'}} >
+                <Box m={{base:"20px", xl:"20"}} mt={10} w={{ xl:"45%"}} textAlign={{base:'center'}} >
                     <Image w="auto" src="./marcelosmove.png"  border="1px solid black"/>
                 </Box>
                 
