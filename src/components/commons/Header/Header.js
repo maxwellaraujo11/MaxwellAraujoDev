@@ -1,9 +1,11 @@
-import { Flex, Heading, Image, Link  } from "@chakra-ui/react";
+import { Flex, Heading, Image, Link, useBreakpointValue, IconButton,  } from "@chakra-ui/react";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 function Header() {
+
+  const visibilidade = useBreakpointValue({ base: "block", md: "none", xl: "none"});
+
     return (
         <Flex 
             zIndex={9}
@@ -29,8 +31,8 @@ function Header() {
             <AnchorLink href="#contato" _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Contato </AnchorLink>
           </Flex>
           
-          <FontAwesomeIcon icon={faBars} 
-             display={{base:"flex", sm:"flex", xl:"none"}}
+          <IconButton icon={<HamburgerIcon />} 
+             display={visibilidade}
              fontSize={25} />
 
         </Flex>
