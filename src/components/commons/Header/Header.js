@@ -23,8 +23,9 @@ function Header() {
         >
 
           <Flex gap={2} align="center" >
-            <Image w={70} borderRadius={50} src="/perfil.jpg"/>
-            <Heading fontSize={{base:"20", xl: "25"}} fontFamily="source sans pro">
+            <Image w={70} borderRadius={50} src="/perfil.jpg"
+            />
+            <Heading fontSize={{base:"20", xl: "25"}}>
               MAXWELL  ARAUJO
             </Heading>
           </Flex>
