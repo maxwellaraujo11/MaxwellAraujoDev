@@ -4,7 +4,7 @@ import { Flex, Text, Button, Heading, Link, Image,  } from "@chakra-ui/react"
 function Home() {
 
     return (
-      <Flex bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt="50" pos="relative">
+      <Flex id="inicio" bgImage="url(./bgMain.jpg)" h="100vh" justify="center" align="center" flexDir="column" mt="50" pos="relative">
 
         <Flex 
             flexDir="column" 

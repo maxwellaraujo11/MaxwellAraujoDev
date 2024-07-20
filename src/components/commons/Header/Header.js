@@ -1,6 +1,6 @@
 
 import { Flex, Heading, Image, Link, Box, useDisclosure, IconButton, useBreakpointValue } from "@chakra-ui/react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 function Header() {
@@ -23,7 +23,7 @@ function Header() {
         >
 
           <Flex gap={2} align="center" >
-            <Image w={50} borderRadius={50} src="https://images.pexels.com/photos/20845839/pexels-photo-20845839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+            <Image w={70} borderRadius={50} src="/perfil.jpg"/>
             <Heading fontSize={{base:"20", xl: "25"}} fontFamily="source sans pro">
               MAXWELL  ARAUJO
             </Heading>
@@ -37,10 +37,18 @@ function Header() {
            display={{ base: "none", md: "flex" }} 
            >
 
-            <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Inicio </Link>
-            <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Habilidades </Link>
-            <Link _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Projetos </Link>
-            <AnchorLink href="#contato" _hover={{ color: "blue.500", transition: " 0.5s ease-in-out",}}> Contato </AnchorLink>
+                <ScrollLink to="inicio" smooth={true} duration={500}>
+                  <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Inicio</Link>
+                </ScrollLink>
+                <ScrollLink to="habilidades" smooth={true} duration={500}>
+                  <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Habilidades</Link>
+                </ScrollLink>
+                <ScrollLink to="projetos" smooth={true} duration={500}>
+                  <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Projetos</Link>
+                </ScrollLink>
+                <ScrollLink to="contato" smooth={true} duration={500}>
+                  <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Contato</Link>
+                </ScrollLink>
 
           </Flex>
           
@@ -71,10 +79,18 @@ function Header() {
               fontWeight={600} 
               fontSize={18}
             >
-              <Link onClick={onToggle} _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Inicio</Link>
-              <Link onClick={onToggle} _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Habilidades</Link>
-              <Link onClick={onToggle} _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Projetos</Link>
-              <AnchorLink href="#contato" onClick={onToggle} _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Contato</AnchorLink>
+              <ScrollLink to="inicio" smooth={true} duration={500} onClick={onToggle}>
+                <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Inicio</Link>
+              </ScrollLink>
+              <ScrollLink to="habilidades" smooth={true} duration={500} onClick={onToggle}>
+                <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Habilidades</Link>
+              </ScrollLink>
+              <ScrollLink to="projetos" smooth={true} duration={500} onClick={onToggle}>
+                <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Projetos</Link>
+              </ScrollLink>
+              <ScrollLink to="contato" smooth={true} duration={500} onClick={onToggle}>
+                <Link _hover={{ color: "blue.500", transition: "0.5s ease-in-out" }}>Contato</Link>
+              </ScrollLink>
             </Flex>
           </Box>
 

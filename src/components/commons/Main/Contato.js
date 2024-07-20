@@ -2,7 +2,7 @@ import { Flex, Center, Text, FormControl, FormLabel, Input, Textarea, Button } f
 
 function Contato() {
     return (
-        <Flex bgImage="url(./bgContatos.jpg)"  justify="center" flexDir="column">
+        <Flex id='contato' bgImage="url(./bgContatos.jpg)"  justify="center" flexDir="column">
             <Center flexDir="column" >
                 <Text fontSize={30} m="0 auto" mb={5} mt="40" textAlign="center" fontWeight={600} fontFamily="arial"> 
                     CONTATO

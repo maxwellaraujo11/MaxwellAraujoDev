@@ -2,7 +2,7 @@ import { Flex, Text, Center, Image, Box, Button, Link} from "@chakra-ui/react"
 
 function Projects() {
     return(
-        <Flex flexDir="column" bg="white.200">
+        <Flex id="projetos" flexDir="column" bg="white.200">
             <Center flexDir="column" >
                 <Text fontSize={30} m="0 auto" mb={5} mt="40" textAlign="center" fontWeight={600} fontFamily="arial"> 
                         PROJETOS
